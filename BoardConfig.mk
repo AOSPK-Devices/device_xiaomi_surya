@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/surya
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Skip Boot Jar check
+SKIP_BOOT_JARS_CHECK := true
+
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
 
