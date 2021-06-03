@@ -110,3 +110,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/xiaomi/surya
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
