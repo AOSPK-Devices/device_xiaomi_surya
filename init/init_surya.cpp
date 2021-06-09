@@ -84,8 +84,8 @@ void set_device_fp() {
     string source_partitions[] = { "", "bootimage", "odm.", "product.",
                                    "system", "system_ext.", "vendor." };
 
-    string fp = "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys";
-    string desc = "dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys";
+    string fp = "google/sunfish/sunfish:11/RQ3A.210605.005/7349499:user/release-keys";
+    string desc = "sunfish-user 11 RQ3A.210605.005 7349499 release-keys";
 
     for (const string &source : source_partitions) {
         set_ro_build_prop(source, "fingerprint", fp, false);
