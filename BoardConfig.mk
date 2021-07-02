@@ -30,6 +30,9 @@ TARGET_SCREEN_DENSITY := 420
 # DT2W
 TARGET_TAP_TO_WAKE_NODE  := "/proc/tp_gesture"
 
+# Override Hals
+OVERRIDE_QCOM_HARDWARE_VARIANT := sm8150-surya
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += surya
