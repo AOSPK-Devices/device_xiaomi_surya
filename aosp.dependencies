@@ -1,7 +1,9 @@
 [
     {
-        "repository":   "vendor_xiaomi_surya",
-        "target_path":  "vendor/xiaomi/surya"
+        "remote": "github",
+        "repository": "TheBootloops/vendor_xiaomi_surya",
+        "target_path": "vendor/xiaomi/surya",
+        "branch": "eleven"
     },
     {
         "repository":   "kernel_xiaomi_surya",
@@ -12,8 +14,10 @@
         "target_path":  "device/xiaomi/sm6150-common"
     },
     {
-        "repository":   "vendor_xiaomi_sm6150-common",
-        "target_path":  "vendor/xiaomi/sm6150-common"
+        "remote": "github",
+        "repository": "TheBootloops/vendor_xiaomi_sm6150-common",
+        "target_path": "vendor/xiaomi/sm6150-common",
+        "branch": "eleven"
     },
     {
         "remote": "github",
