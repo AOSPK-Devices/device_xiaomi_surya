@@ -446,6 +446,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
 #Secure element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
