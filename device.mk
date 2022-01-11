@@ -130,6 +130,14 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libshim_megvii
 
+# CustomDoze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Device properties
 include $(LOCAL_PATH)/device_prop.mk
 
