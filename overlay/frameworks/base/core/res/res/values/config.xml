@@ -246,11 +246,6 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">1</integer>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">17</integer>
-
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
@@ -373,20 +368,6 @@
          it causes the device to wake up.
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
-
-    <!-- ComponentName of a dream to show whenever the system would otherwise have
-         gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
-         try to start this dream if possible.  The dream should typically call startDozing()
-         to put the display into a low power state and allow the application processor
-         to be suspended.  When the dream ends, the system will go to sleep as usual.
-         Specify the component name or an empty string if none.
-         Note that doze dreams are not subject to the same start conditions as ordinary dreams.
-         Doze dreams will run whenever the power manager is in a dozing state. -->
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-
-    <!-- If true, the doze component is not started until after the screen has been
-         turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOffByDefault">false</bool>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
@@ -521,10 +502,6 @@
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-         in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
-
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
@@ -639,4 +616,11 @@
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
 
+    <!-- Enable doze mode -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">17</integer>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
+    <bool name="config_setColorTransformAccelerated">true</bool>
 </resources>
