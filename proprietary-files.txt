@@ -56,7 +56,6 @@ vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
 
 # Audio HAL
-vendor/lib/hw/audio.primary.sm6150.so
 vendor/lib/libaudio_log_utils.so
 
 # Audio ADSP

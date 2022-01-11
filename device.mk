@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.usb.default \
-    audio.r_submix.default
+    audio.r_submix.default \
+    audio.primary.$(MSMSTEPPE)
 
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
