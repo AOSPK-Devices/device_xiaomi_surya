@@ -5,7 +5,7 @@
 #
 
 # Firmware Surya
-$(call inherit-product, vendor/xiaomi-firmware/surya/Android.mk)
+$(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
 # RefreshRate Settings
 $(call inherit-product, device/xiaomi/surya/refreshrate.mk)
@@ -137,6 +137,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# KrakenDoze
+PRODUCT_PACKAGES += \
+    KrakenDoze
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=xiaomi.sensor.pickup
+
 # Keyhandler
 PRODUCT_PACKAGES += \
     KeyHandler
@@ -152,7 +160,7 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    vendor/xiaomi-firmware
+    firmware/xiaomi/surya
 
 # NFC
 PRODUCT_PACKAGES += \

@@ -1,32 +1,26 @@
 [
    {
-       "remote"      : "pixel-devices",
        "repository"  : "device_xiaomi_J20C-sepolicy",
-       "target_path" : "device/xiaomi/J20C-sepolicy",
-       "branch"      : "twelve"
+       "target_path" : "device/xiaomi/J20C-sepolicy"
    },
    {
-       "remote"      : "pixel-devices",
        "repository"  : "device_qcom_common",
-       "target_path" : "device/qcom/common",
-       "branch"      : "twelve"
+       "target_path" : "device/qcom/common"
    },
    {
-       "remote"      : "pixel-devices",
        "repository"  : "kernel_xiaomi_surya",
-       "target_path" : "kernel/xiaomi/surya",
-       "branch"      : "twelve"
+       "target_path" : "kernel/xiaomi/surya"
    },
    {
-       "remote"      : "pixel-devices-blobs",
+       "remote"      : "blobs",
        "repository"  : "vendor_xiaomi_surya",
        "target_path" : "vendor/xiaomi/surya",
        "branch"      : "twelve"
    },
    {
-       "remote"      : "pixel-devices-blobs",
-       "repository"  : "vendor_xiaomi-firmware",
-       "target_path" : "vendor/xiaomi-firmware",
+       "repository"  : "chrisw444/firmware_xiaomi_surya",
+       "target_path" : "firmware/xiaomi/surya",
+       "remote"      : "gitlab",
        "branch"      : "twelve"
    }
 ]
